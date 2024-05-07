@@ -1,0 +1,10 @@
+.website-list {
+    display: flex;
+    justify-content: space-around;
+
+    list-style-type: none;
+}
+.website-link {
+    text-decoration: none;
+    color: black;
+}
