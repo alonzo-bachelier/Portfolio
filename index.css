@@ -1,10 +1,80 @@
-.website-list {
-    display: flex;
-    justify-content: space-around;
-
-    list-style-type: none;
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #a79277;
 }
-.website-link {
-    text-decoration: none;
-    color: black;
+
+body::-webkit-scrollbar {
+    width: 12px;
+    background-color: #a79277;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #ead8c0;
+}
+.background-color {
+    background-color: #ead8c0 !important;
+}
+.background-color-2 {
+    background-color: #fff2e1;
+}
+
+#home {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(assets/images/home-wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 25% 75%;
+    z-index: 1;
+}
+.titles {
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    font-size: 2.5em;
+    border-radius: 5px;
+    background-color: rgba(102, 86, 47, 0.163);
+    color: #a79277;
+}
+.cursor {
+    display: inline-block;
+    width: 2px;
+    height: 1.1em;
+    background-color: #a79277;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+.about-me-center {
+    max-width: 600px;
+    margin: auto;
+    width: 85%;
+}
+.title {
+    text-align: center;
+    font-size: 1.8em;
+    margin-bottom: 25px;
+}
+.about-me-text {
+    margin-top: 25px;
+    font-size: 1.1em;
+    text-align: justify;
+    margin-bottom: 25px;
+}
+.accordion-center {
+    max-width: 1200px;
+    margin: auto;
+    width: 85%;
+}
+#accordion-collapse {
+    margin-bottom: 25px;
+    margin-top: 25px;
 }
