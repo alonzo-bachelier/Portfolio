@@ -63,9 +63,21 @@ function toggleAccordion(targetId) {
         targetAccordion.setAttribute("aria-expanded", "false");
     }
 
+    targetAccordion.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+    });
+
+    // Une fois que le défilement est terminé, ajustez la position
     setTimeout(() => {
-        targetAccordion.scrollIntoView({ behavior: "smooth", block: "start" });
-    }, 300);
+        // Ajustez la position en fonction de la page actuelle et de la position de l'élément
+        const yOffset = -50; // Ajustez cet offset à la valeur souhaitée
+        const y =
+            targetAccordion.getBoundingClientRect().top +
+            window.pageYOffset +
+            yOffset;
+        window.scrollTo({ top: y, behavior: "smooth" });
+    }, 500); //
 }
 
 //cacher ou non le header selon le scroll

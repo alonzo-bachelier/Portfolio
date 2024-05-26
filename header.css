@@ -45,7 +45,7 @@ header {
     .curriculum-background {
         border-radius: 10px !important;
     }
-} /* header */
+}
 .background-header {
     background-color: #ead8c0 !important;
 }
@@ -72,23 +72,3 @@ header {
     transform: rotate(1080deg);
     transition: 1.5s cubic-bezier(0.5, 0, 0, 1);
 }
-/* fin header */
-/* side nav  */
-.side-nav {
-    position: absolute;
-    margin-top: 40vh;
-    margin-bottom: 40vh;
-    width: 25px;
-}
-.logo-side-nav {
-    margin-top: 5px;
-    width: 25px;
-    height: 25px;
-    cursor: pointer;
-    margin-bottom: 5px;
-}
-.logo-side-nav:hover {
-    transform: translateX(0.5vw);
-}
-
-/* fin side nav  */
